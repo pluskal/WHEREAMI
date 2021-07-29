@@ -1,0 +1,39 @@
+{
+  "name": "WHERE AM I",
+  "version": "0.3",
+  "slug": "where_am_i_addon",
+  "description": "Add-on for bluetooth localization WHERE AM I",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "image":"xkolar62/image-{arch}-whereami",
+  "url": "https://github.com/xkolar62/WHEREAMI",
+  "startup": "application",
+  "webui":"http://[HOST]:[PORT:3000]/",
+  "panel_icon":"mdi:home-map-marker",
+  "hassio_api": true,
+  "homeassistant_api": true,
+  "options": {
+    "mqtt_broker": null,
+    "mqtt_port": 1883,
+    "mqtt_username": null,
+    "mqtt_password": null,
+    "mongo_string": "mongodb://username:password@localhost:27017/wheredb",
+    "mongo_db_name": "wheredb",
+    "mqtt_ha_discovery_prefix":"homeassistant"
+  },
+  "schema": {
+    "mqtt_broker":"str",
+    "mqtt_port":"port",
+    "mqtt_username":"str",
+    "mqtt_password":"password",
+    "mongo_string":"str",
+    "mongo_db_name":"str",
+    "mqtt_ha_discovery_prefix":"str"
+  },
+  "ports": {
+    "3000/tcp": 3000
+  },
+  "ports_description": {
+    "3000/tcp": "WHERE AM I Frontend"
+  }
+}
+
