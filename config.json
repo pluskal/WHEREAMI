@@ -1,6 +1,6 @@
 {
   "name": "WHERE AM I",
-  "version": "0.3",
+  "version": "1.0.0",
   "slug": "where_am_i_addon",
   "description": "Add-on for bluetooth localization WHERE AM I",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
